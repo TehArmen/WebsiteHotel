@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {}
+    "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {}
   },
   "projects": {
-    "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {
+    "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
+        "projectUniqueName": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
         "projectName": "HomePage",
-        "projectPath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-        "packagesPath": "C:\\Users\\Armen\\.nuget\\packages\\",
-        "outputPath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
+        "projectPath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
+        "packagesPath": "C:\\Users\\Jeremy Argueta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Armen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeremy Argueta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
