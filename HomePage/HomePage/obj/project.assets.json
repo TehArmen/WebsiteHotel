@@ -8,19 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Armen\\.nuget\\packages\\": {}
+    "C:\\Users\\Owner\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
       "projectName": "HomePage",
-      "projectPath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-      "packagesPath": "C:\\Users\\Armen\\.nuget\\packages\\",
-      "outputPath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
+      "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Armen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
