@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jeremy Argueta\\.nuget\\packages\\": {}
+    "C:\\Users\\Armen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeremy Argueta\\source\\repos\\HomePage\\HomePage\\HomePage.csproj",
+      "projectUniqueName": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
       "projectName": "HomePage",
-      "projectPath": "C:\\Users\\Jeremy Argueta\\source\\repos\\HomePage\\HomePage\\HomePage.csproj",
-      "packagesPath": "C:\\Users\\Jeremy Argueta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jeremy Argueta\\source\\repos\\HomePage\\HomePage\\obj\\",
+      "projectPath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
+      "packagesPath": "C:\\Users\\Armen\\.nuget\\packages\\",
+      "outputPath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jeremy Argueta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Armen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
