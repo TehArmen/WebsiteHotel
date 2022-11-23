@@ -2,12 +2,15 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Update="checkout_page.cs">
 =======
     <Compile Update="Confirmation.cs">
 >>>>>>> dead_jeremy_test
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> Rooms_aa
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
