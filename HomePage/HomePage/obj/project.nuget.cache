@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sP2AcIRVtON7H0LObO0tLgdO2TjSoBI65Z4coHmEHWYgQp2P5AYrSCo5f1k1QK1+QpbRm8YzGmkRmKpryJf7dw==",
+  "dgSpecHash": "es/k/xt39NUoOHgd9fVcoNRMt+ibCzrl0gL8hxvzUwFHrLyQX1wiExpvBiH3L3HJ3ZqkRi60dTIPESncKRdvKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
+  "projectFilePath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
