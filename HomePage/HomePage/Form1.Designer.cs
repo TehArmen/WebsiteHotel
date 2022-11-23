@@ -44,9 +44,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 26);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(523, 339);
+            this.pictureBox1.Size = new System.Drawing.Size(215, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -54,9 +55,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(25, 456);
+            this.button1.Location = new System.Drawing.Point(10, 167);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 58);
+            this.button1.Size = new System.Drawing.Size(77, 21);
             this.button1.TabIndex = 1;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,18 +66,20 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(258, 456);
+            this.button2.Location = new System.Drawing.Point(106, 167);
+            this.button2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 58);
+            this.button2.Size = new System.Drawing.Size(77, 21);
             this.button2.TabIndex = 2;
             this.button2.Text = "Book Now";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(505, 456);
+            this.button3.Location = new System.Drawing.Point(208, 167);
+            this.button3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 58);
+            this.button3.Size = new System.Drawing.Size(77, 21);
             this.button3.TabIndex = 3;
             this.button3.Text = "Contact Us";
             this.button3.UseVisualStyleBackColor = true;
@@ -83,52 +87,57 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(759, 456);
+            this.button4.Location = new System.Drawing.Point(313, 167);
+            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(188, 58);
+            this.button4.Size = new System.Drawing.Size(77, 21);
             this.button4.TabIndex = 4;
             this.button4.Text = "Resturant";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(505, 742);
+            this.dateTimePicker1.Location = new System.Drawing.Point(208, 271);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(486, 47);
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 23);
             this.dateTimePicker1.TabIndex = 5;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(669, 669);
+            this.label1.Location = new System.Drawing.Point(275, 245);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 41);
+            this.label1.Size = new System.Drawing.Size(53, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Check In";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(1152, 742);
+            this.dateTimePicker2.Location = new System.Drawing.Point(474, 271);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(500, 47);
+            this.dateTimePicker2.Size = new System.Drawing.Size(208, 23);
             this.dateTimePicker2.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1385, 653);
+            this.label2.Location = new System.Drawing.Point(570, 239);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 41);
+            this.label2.Size = new System.Drawing.Size(63, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Check Out";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1984, 1015);
+            this.ClientSize = new System.Drawing.Size(980, 575);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label1);
@@ -138,6 +147,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
