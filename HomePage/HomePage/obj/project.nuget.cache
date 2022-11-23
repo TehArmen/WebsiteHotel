@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "sP2AcIRVtON7H0LObO0tLgdO2TjSoBI65Z4coHmEHWYgQp2P5AYrSCo5f1k1QK1+QpbRm8YzGmkRmKpryJf7dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-=======
-  "dgSpecHash": "7Y1kn9AZgeTd5e5/Vp4aKf2n7RKO4Un1lAnTVnomJj5zCFe9t1lmNI1G0wH1AGiXZgcaq6X4C/DLav7hEroFbA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
->>>>>>> dead_jeremy_test
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

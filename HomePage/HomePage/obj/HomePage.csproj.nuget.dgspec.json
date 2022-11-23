@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {}
   },
   "projects": {
@@ -13,30 +12,13 @@
         "projectPath": "C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
         "packagesPath": "C:\\Users\\aliza\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aliza\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
-=======
-    "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-        "projectName": "HomePage",
-        "projectPath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-        "packagesPath": "C:\\Users\\Jeremy Argueta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
->>>>>>> dead_jeremy_test
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\aliza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-          "C:\\Users\\Jeremy Argueta\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> dead_jeremy_test
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
