@@ -37,3 +37,4 @@ C:\Users\aliza\Documents\GitHub\WebsiteHotel\HomePage\HomePage\bin\Debug\net6.0-
 C:\Users\aliza\Documents\GitHub\WebsiteHotel\HomePage\HomePage\obj\Debug\net6.0-windows\HomePage.genruntimeconfig.cache
 C:\Users\aliza\Documents\GitHub\WebsiteHotel\HomePage\HomePage\obj\Debug\net6.0-windows\ref\HomePage.dll
 C:\Users\aliza\Documents\GitHub\WebsiteHotel\HomePage\HomePage\obj\Debug\net6.0-windows\HomePage.Confirmation.resources
+C:\Users\aliza\Documents\GitHub\WebsiteHotel\HomePage\HomePage\obj\Debug\net6.0-windows\HomePage.Booking_Page.resources
