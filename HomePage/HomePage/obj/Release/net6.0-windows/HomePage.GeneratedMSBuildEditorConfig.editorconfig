@@ -14,8 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HomePage
-<<<<<<< HEAD
 build_property.ProjectDir = F:\Documents\GitHub\WebsiteHotel\HomePage\HomePage\
-=======
-build_property.ProjectDir = C:\Users\Jeremy Argueta\Documents\GitHub\WebsiteHotel\HomePage\HomePage\
->>>>>>> e5658903c774b15e36f7f4e739d5dc6b99fa4ed2

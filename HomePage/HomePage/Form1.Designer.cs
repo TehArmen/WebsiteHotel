@@ -45,7 +45,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(10, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -56,7 +56,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(10, 167);
-            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 21);
             this.button1.TabIndex = 1;
@@ -67,7 +67,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(106, 167);
-            this.button2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button2.Margin = new System.Windows.Forms.Padding(1);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 21);
             this.button2.TabIndex = 2;
@@ -77,7 +77,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(208, 167);
-            this.button3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button3.Margin = new System.Windows.Forms.Padding(1);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 21);
             this.button3.TabIndex = 3;
@@ -88,7 +88,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(313, 167);
-            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(77, 21);
             this.button4.TabIndex = 4;
@@ -98,7 +98,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(208, 271);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(202, 23);
             this.dateTimePicker1.TabIndex = 5;
@@ -117,7 +117,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(474, 271);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(208, 23);
             this.dateTimePicker2.TabIndex = 7;
@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 575);
+            this.ClientSize = new System.Drawing.Size(852, 591);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label1);
@@ -147,7 +147,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

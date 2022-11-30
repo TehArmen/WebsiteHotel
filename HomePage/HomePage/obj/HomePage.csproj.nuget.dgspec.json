@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Armen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-        "projectName": "HomePage",
-        "projectPath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-        "packagesPath": "C:\\Users\\Jeremy Argueta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Jeremy Argueta\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> e5658903c774b15e36f7f4e739d5dc6b99fa4ed2
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

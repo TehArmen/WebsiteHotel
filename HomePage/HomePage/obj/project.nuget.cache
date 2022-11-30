@@ -1,14 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "es/k/xt39NUoOHgd9fVcoNRMt+ibCzrl0gL8hxvzUwFHrLyQX1wiExpvBiH3L3HJ3ZqkRi60dTIPESncKRdvKg==",
+  "dgSpecHash": "pwJlWvRi23A5YYCbM8aO2Dyt41tRKxY03YO+hpb/tfPc1ZytcLyCTOCQKLR0isQ745NeINuCbequRDgrh/mswA==",
   "success": true,
   "projectFilePath": "F:\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
-=======
-  "dgSpecHash": "7Y1kn9AZgeTd5e5/Vp4aKf2n7RKO4Un1lAnTVnomJj5zCFe9t1lmNI1G0wH1AGiXZgcaq6X4C/DLav7hEroFbA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Jeremy Argueta\\Documents\\GitHub\\WebsiteHotel\\HomePage\\HomePage\\HomePage.csproj",
->>>>>>> e5658903c774b15e36f7f4e739d5dc6b99fa4ed2
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Armen\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Armen\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
