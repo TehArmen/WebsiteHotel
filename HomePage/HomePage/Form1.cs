@@ -33,7 +33,9 @@ namespace HomePage
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Rooms roomPage = new Rooms();
+            roomPage.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
