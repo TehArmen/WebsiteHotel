@@ -16,5 +16,10 @@ namespace HomePage
         {
             InitializeComponent();
         }
+
+        private void Rooms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
