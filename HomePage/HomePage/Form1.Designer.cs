@@ -1,4 +1,4 @@
-﻿namespace HomePage
+namespace HomePage
 {
     partial class Form1
     {
@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.Admin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +74,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Book Now";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -94,6 +96,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Resturant";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dateTimePicker1
             // 
@@ -133,11 +136,21 @@
             this.label2.Text = "Check Out";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // Admin
+            // 
+            this.Admin.Location = new System.Drawing.Point(695, 26);
+            this.Admin.Name = "Admin";
+            this.Admin.Size = new System.Drawing.Size(75, 23);
+            this.Admin.TabIndex = 9;
+            this.Admin.Text = "button5";
+            this.Admin.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 591);
+            this.ClientSize = new System.Drawing.Size(817, 371);
+            this.Controls.Add(this.Admin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label1);
@@ -167,5 +180,6 @@
         private Label label1;
         private DateTimePicker dateTimePicker2;
         private Label label2;
+        private Button Admin;
     }
 }
