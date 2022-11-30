@@ -59,5 +59,45 @@ namespace HomePage.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_600x388 {
+            get {
+                object obj = ResourceManager.GetObject("1-600x388", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deluxe_king {
+            get {
+                object obj = ResourceManager.GetObject("deluxe-king", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Chatwal_Luxury_Collection_Hotel_New_York_Superior_Queen_Room_1024x1024 {
+            get {
+                object obj = ResourceManager.GetObject("The-Chatwal-Luxury-Collection-Hotel-New-York-Superior-Queen-Room-1024x1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Troubadour_TroubieQueen {
+            get {
+                object obj = ResourceManager.GetObject("Troubadour_TroubieQueen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

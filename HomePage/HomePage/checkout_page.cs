@@ -10,34 +10,34 @@ using System.Windows.Forms;
 
 namespace HomePage
 {
-    public partial class Rooms : Form
+    public partial class checkout_page : Form
     {
-        public Rooms()
+        public checkout_page()
         {
             InitializeComponent();
         }
 
-        private void Rooms_Load(object sender, EventArgs e)
+        private void checkout_page_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void btn_goback_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btn_cr_Click(object sender, EventArgs e)
         {
 
         }
