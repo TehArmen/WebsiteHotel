@@ -51,16 +51,15 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btn_cr = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn_goback = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -70,9 +69,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CHEKOUT";
+            this.label1.Text = "CHECKOUT";
             // 
             // label2
             // 
@@ -274,16 +273,6 @@
             this.label13.TabIndex = 22;
             this.label13.Text = "CONTACT INFORMATION";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(60, 280);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(78, 13);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Name on Card:";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -295,16 +284,15 @@
             this.label15.Text = "Card Number:";
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // label16
+            // label14
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(350, 280);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(31, 13);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "CVV:";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(60, 280);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 13);
+            this.label14.TabIndex = 24;
+            this.label14.Text = "Name on Card:";
             // 
             // label17
             // 
@@ -315,6 +303,17 @@
             this.label17.Size = new System.Drawing.Size(67, 13);
             this.label17.TabIndex = 25;
             this.label17.Text = "MM / YYYY:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(350, 280);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(31, 13);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "CVV:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // textBox11
             // 
@@ -362,16 +361,6 @@
             this.btn_cr.UseVisualStyleBackColor = false;
             this.btn_cr.Click += new System.EventHandler(this.btn_cr_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(60, 317);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(290, 19);
-            this.checkBox1.TabIndex = 32;
-            this.checkBox1.Text = "I agree with the terms and conditions of this Hotel";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // btn_goback
             // 
             this.btn_goback.Location = new System.Drawing.Point(50, 375);
@@ -388,7 +377,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_goback);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btn_cr);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox13);
@@ -454,16 +442,15 @@
         private TextBox textBox9;
         private TextBox textBox10;
         private Label label13;
-        private Label label14;
         private Label label15;
-        private Label label16;
+        private Label label14;
         private Label label17;
+        private Label label16;
         private TextBox textBox11;
         private TextBox textBox12;
         private TextBox textBox13;
         private DateTimePicker dateTimePicker1;
         private Button btn_cr;
-        private CheckBox checkBox1;
         private Button btn_goback;
     }
 }
