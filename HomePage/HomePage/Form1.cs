@@ -8,7 +8,7 @@ namespace HomePage
     {
 
         SqlConnection serverConnect;
-        string path = "Data Source =DESKTOP-UDAJ3HN\\SQLEXPRESS;Initial Catalog= Test_base;Integrated Security =True";
+        string path = "Data Source =TEHARMEN\\SQLEXPRESS01;Initial Catalog= Test_base;Integrated Security =True";
         SqlCommand cmd;
         public Form1()
         {
@@ -57,10 +57,10 @@ namespace HomePage
             //cmd.ExecuteNonQuery();
             //serverConnect.Close();
 
-            var context = new MyDBContext();
-            var employeeInfo = context.Set<EmployeeINFO>().First(m => m.EmployeeID == 1001);
-            employeeInfo.FirstName = "Jeremy";
-            context.SaveChanges();  
+            //var context = new MyDBContext();
+            //var employeeInfo = context.Set<EmployeeINFO>().First(m => m.EmployeeID == 1001);
+            //employeeInfo.FirstName = "Jeremy";
+            //context.SaveChanges();  
 
             //var abe = new EmployeeINFO();
             //abe.EmployeeID = 69;
@@ -69,10 +69,17 @@ namespace HomePage
             //context.Set<EmployeeINFO>().Add(abe);
             //context.SaveChanges();
 
-            context.Set<EmployeeINFO>().Remove(employeeInfo);
-            context.SaveChanges();
+            //context.Set<EmployeeINFO>().Remove(employeeInfo);
+            //context.SaveChanges();
             
+            checkout_page x = new checkout_page();
+            this.Hide();
+            x.Show();
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
