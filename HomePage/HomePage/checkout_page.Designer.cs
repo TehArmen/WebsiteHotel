@@ -223,6 +223,7 @@
             this.Country.Name = "Country";
             this.Country.Size = new System.Drawing.Size(213, 26);
             this.Country.TabIndex = 14;
+            this.Country.TextChanged += new System.EventHandler(this.Country_TextChanged);
             // 
             // Address1
             // 
@@ -232,6 +233,7 @@
             this.Address1.Name = "Address1";
             this.Address1.Size = new System.Drawing.Size(213, 26);
             this.Address1.TabIndex = 15;
+            this.Address1.TextChanged += new System.EventHandler(this.Address1_TextChanged);
             // 
             // City
             // 
@@ -241,6 +243,7 @@
             this.City.Name = "City";
             this.City.Size = new System.Drawing.Size(213, 26);
             this.City.TabIndex = 16;
+            this.City.TextChanged += new System.EventHandler(this.City_TextChanged);
             // 
             // LastName
             // 
@@ -250,6 +253,7 @@
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(213, 26);
             this.LastName.TabIndex = 17;
+            this.LastName.TextChanged += new System.EventHandler(this.LastName_TextChanged);
             // 
             // Phone
             // 
@@ -259,6 +263,7 @@
             this.Phone.Name = "Phone";
             this.Phone.Size = new System.Drawing.Size(213, 26);
             this.Phone.TabIndex = 18;
+            this.Phone.TextChanged += new System.EventHandler(this.Phone_TextChanged);
             // 
             // zipCode
             // 
@@ -268,6 +273,7 @@
             this.zipCode.Name = "zipCode";
             this.zipCode.Size = new System.Drawing.Size(213, 26);
             this.zipCode.TabIndex = 19;
+            this.zipCode.TextChanged += new System.EventHandler(this.zipCode_TextChanged);
             // 
             // Address2
             // 
@@ -277,6 +283,7 @@
             this.Address2.Name = "Address2";
             this.Address2.Size = new System.Drawing.Size(213, 26);
             this.Address2.TabIndex = 20;
+            this.Address2.TextChanged += new System.EventHandler(this.Address2_TextChanged);
             // 
             // State
             // 
@@ -286,6 +293,7 @@
             this.State.Name = "State";
             this.State.Size = new System.Drawing.Size(213, 26);
             this.State.TabIndex = 21;
+            this.State.TextChanged += new System.EventHandler(this.State_TextChanged);
             // 
             // label13
             // 
@@ -352,6 +360,7 @@
             this.cardNumber.Name = "cardNumber";
             this.cardNumber.Size = new System.Drawing.Size(261, 26);
             this.cardNumber.TabIndex = 27;
+            this.cardNumber.TextChanged += new System.EventHandler(this.cardNumber_TextChanged);
             // 
             // nameCC
             // 
@@ -361,6 +370,7 @@
             this.nameCC.Name = "nameCC";
             this.nameCC.Size = new System.Drawing.Size(261, 26);
             this.nameCC.TabIndex = 28;
+            this.nameCC.TextChanged += new System.EventHandler(this.nameCC_TextChanged);
             // 
             // cVV
             // 
@@ -370,6 +380,7 @@
             this.cVV.Name = "cVV";
             this.cVV.Size = new System.Drawing.Size(105, 26);
             this.cVV.TabIndex = 29;
+            this.cVV.TextChanged += new System.EventHandler(this.cVV_TextChanged);
             // 
             // Exp
             // 
@@ -387,6 +398,7 @@
             // btn_cr
             // 
             this.btn_cr.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_cr.Enabled = false;
             this.btn_cr.Location = new System.Drawing.Point(369, 625);
             this.btn_cr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_cr.Name = "btn_cr";

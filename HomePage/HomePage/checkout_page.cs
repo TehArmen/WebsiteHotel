@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using HomePage.Models;
+using System.Xml.Linq;
 
 namespace HomePage
 {
     public partial class checkout_page : Form
-    {   
+    {
 
         public checkout_page()
         {
@@ -72,22 +73,94 @@ namespace HomePage
             //customerInfo.fname = fName.Text;
             //context.SaveChanges();
             ////MessageBox.Show(fName.Text.ToString());
+            ///
+            this.Hide();
+            Confirmation Conf = new Confirmation();
+            Conf.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            setButtonVisibility();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            setButtonVisibility();
         }
 
         private void Exp_ValueChanged(object sender, EventArgs e)
         {
+            setButtonVisibility();
+
             Exp.Format = DateTimePickerFormat.Custom;
             Exp.CustomFormat = "MM yyyy";
+        }
+
+        private void setButtonVisibility()
+        {
+            if ((fName.Text != String.Empty) && (LastName.Text != String.Empty))
+            {
+                btn_cr.Enabled = true;
+            }
+            else
+            { btn_cr.Enabled = false; }
+
+        }
+
+        private void LastName_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void Phone_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void Country_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void zipCode_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void Address1_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void Address2_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void City_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void State_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void cardNumber_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void nameCC_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
+        }
+
+        private void cVV_TextChanged(object sender, EventArgs e)
+        {
+            setButtonVisibility();
         }
     }
 }

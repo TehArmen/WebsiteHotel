@@ -28,8 +28,8 @@ namespace HomePage
         private void AdminPortal_Load(object sender, EventArgs e)
         {
             var context = new MyDBContext();
-            var credentials = context.Set<Customer>().FirstOrDefault(m => m.customerID == 123);
-            dataGridView1.DataSource = context.Set<Customer>().ToList();
+            var credentials = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == 155);
+            dataGridView1.DataSource = context.Set<CustomerInfo>().ToList();
 
         }
     }
