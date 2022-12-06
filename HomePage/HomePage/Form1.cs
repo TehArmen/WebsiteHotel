@@ -7,17 +7,18 @@ namespace HomePage
     public partial class Form1 : Form
     {
 
-        SqlConnection serverConnect;
-        string path = "Data Source =DESKTOP-UDAJ3HN\\SQLEXPRESS;Initial Catalog= Test_base;Integrated Security =True";
-        SqlCommand cmd;
+       
         public Form1()
         {
             InitializeComponent();
-            serverConnect = new SqlConnection(path);
+          
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Confirmation confirmpage = new Confirmation();
+            confirmpage.Show();
 
         }
 
@@ -57,10 +58,10 @@ namespace HomePage
             //cmd.ExecuteNonQuery();
             //serverConnect.Close();
 
-            var context = new MyDBContext();
-            var employeeInfo = context.Set<EmployeeINFO>().First(m => m.EmployeeID == 1001);
-            employeeInfo.FirstName = "Jeremy";
-            context.SaveChanges();  
+            //var context = new MyDBContext();
+            //var employeeInfo = context.Set<Customer>().First(m => m.CustomerID == 1001);
+            //employeeInfo.firstName = "Jeremy";
+            //context.SaveChanges();  
 
             //var abe = new EmployeeINFO();
             //abe.EmployeeID = 69;
@@ -69,11 +70,18 @@ namespace HomePage
             //context.Set<EmployeeINFO>().Add(abe);
             //context.SaveChanges();
 
-            context.Set<EmployeeINFO>().Remove(employeeInfo);
-            context.SaveChanges();
+            //context.Set<Customer>().Remove(employeeInfo);
+            //context.SaveChanges();
             
 
 
+        }
+
+        private void Admin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage= new LoginPage();
+            loginPage.Show();
         }
     }
 }
