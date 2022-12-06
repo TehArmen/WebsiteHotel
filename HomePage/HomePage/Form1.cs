@@ -7,17 +7,18 @@ namespace HomePage
     public partial class Form1 : Form
     {
 
-        SqlConnection serverConnect;
-        string path = "Data Source =TEHARMEN\\SQLEXPRESS01;Initial Catalog= Test_base;Integrated Security =True";
-        SqlCommand cmd;
+       
         public Form1()
         {
             InitializeComponent();
-            serverConnect = new SqlConnection(path);
+          
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Confirmation confirmpage = new Confirmation();
+            confirmpage.Show();
 
         }
 
@@ -81,6 +82,13 @@ namespace HomePage
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Admin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage= new LoginPage();
+            loginPage.Show();
         }
     }
 }

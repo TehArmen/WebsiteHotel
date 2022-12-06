@@ -27,9 +27,16 @@
             base.OnModelCreating(modelBuilder);
 
 
-            var CustomerINFO = modelBuilder.Entity<CustomerInfo>();
+            // var CustomerINFO = modelBuilder.Entity<CustomerInfo>();
 
-            CustomerINFO.HasKey(m => m.CustomerID);
+            // CustomerINFO.HasKey(m => m.CustomerID);
+            // var Customer = modelBuilder.Entity<Customer>();
+
+            // var Login = modelBuilder.Entity<LoginPortal>();
+
+            // Customer.HasKey(m => m.customerID);
+
+            // Login.HasKey(m => m.userID);
         }
     }
 }
