@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomePage.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace HomePage
         public AdminPortal()
         {
             InitializeComponent();
+            
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AdminPortal_Load(object sender, EventArgs e)
+        {
+            var context = new MyDBContext();
+            var credentials = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == 155);
+            dataGridView1.DataSource = context.Set<CustomerInfo>().ToList();
+
         }
     }
 }

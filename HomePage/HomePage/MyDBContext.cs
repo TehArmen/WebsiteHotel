@@ -19,17 +19,25 @@
             base.OnConfiguring(optionsBuilder);
 
 
-            optionsBuilder.UseSqlServer("Data Source =DESKTOP-UDAJ3HN\\SQLEXPRESS;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
-            optionsBuilder.UseSqlServer("Data Source =DESKTOP-UDAJ3HN\\SQLEXPRESS;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
+            //optionsBuilder.UseSqlServer("Data Source =DESKTOP-UDAJ3HN\\SQLEXPRESS;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Data Source =TEHARMEN\\SQLEXPRESS01;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
 
-            var employeeINFO = modelBuilder.Entity<EmployeeINFO>();
+            var CustomerINFO = modelBuilder.Entity<CustomerInfo>();
 
-            employeeINFO.HasKey(m => m.EmployeeID);
+            CustomerINFO.HasKey(m => m.CustomerID);
+            
+            //var Customer = modelBuilder.Entity<Customer>();
+
+            var Login = modelBuilder.Entity<LoginPortal>();
+
+            // Customer.HasKey(m => m.customerID);
+
+            Login.HasKey(m => m.userID);
         }
     }
 }
