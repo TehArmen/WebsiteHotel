@@ -59,8 +59,8 @@ namespace HomePage
             //serverConnect.Close();
 
             //var context = new MyDBContext();
-            //var employeeInfo = context.Set<Customer>().First(m => m.CustomerID == 1001);
-            //employeeInfo.firstName = "Jeremy";
+            //var employeeInfo = context.Set<EmployeeINFO>().First(m => m.EmployeeID == 1001);
+            //employeeInfo.FirstName = "Jeremy";
             //context.SaveChanges();  
 
             //var abe = new EmployeeINFO();
@@ -70,10 +70,17 @@ namespace HomePage
             //context.Set<EmployeeINFO>().Add(abe);
             //context.SaveChanges();
 
-            //context.Set<Customer>().Remove(employeeInfo);
+            //context.Set<EmployeeINFO>().Remove(employeeInfo);
             //context.SaveChanges();
             
+            checkout_page x = new checkout_page();
+            this.Hide();
+            x.Show();
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
 

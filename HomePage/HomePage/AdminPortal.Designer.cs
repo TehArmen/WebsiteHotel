@@ -199,19 +199,19 @@
             // 
             // customerBindingSource3
             // 
-            this.customerBindingSource3.DataSource = typeof(HomePage.Models.Customer);
+            this.customerBindingSource3.DataSource = typeof(HomePage.Models.CustomerInfo);
             // 
             // customerBindingSource2
             // 
-            this.customerBindingSource2.DataSource = typeof(HomePage.Models.Customer);
+            this.customerBindingSource2.DataSource = typeof(HomePage.Models.CustomerInfo);
             // 
             // customerBindingSource1
             // 
-            this.customerBindingSource1.DataSource = typeof(HomePage.Models.Customer);
+            this.customerBindingSource1.DataSource = typeof(HomePage.Models.CustomerInfo);
             // 
             // customerBindingSource
             // 
-            this.customerBindingSource.DataSource = typeof(HomePage.Models.Customer);
+            this.customerBindingSource.DataSource = typeof(HomePage.Models.CustomerInfo);
             // 
             // myDBContextBindingSource
             // 
