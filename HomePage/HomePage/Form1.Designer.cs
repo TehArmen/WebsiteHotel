@@ -45,10 +45,10 @@ namespace HomePage
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 71);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 124);
+            this.pictureBox1.Size = new System.Drawing.Size(522, 339);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,10 +56,10 @@ namespace HomePage
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(10, 167);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
+            this.button1.Location = new System.Drawing.Point(24, 456);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 21);
+            this.button1.Size = new System.Drawing.Size(187, 57);
             this.button1.TabIndex = 1;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,10 +67,10 @@ namespace HomePage
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(106, 167);
-            this.button2.Margin = new System.Windows.Forms.Padding(1);
+            this.button2.Location = new System.Drawing.Point(257, 456);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 21);
+            this.button2.Size = new System.Drawing.Size(187, 57);
             this.button2.TabIndex = 2;
             this.button2.Text = "Book Now";
             this.button2.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@ namespace HomePage
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(208, 167);
-            this.button3.Margin = new System.Windows.Forms.Padding(1);
+            this.button3.Location = new System.Drawing.Point(505, 456);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 21);
+            this.button3.Size = new System.Drawing.Size(187, 57);
             this.button3.TabIndex = 3;
             this.button3.Text = "Contact Us";
             this.button3.UseVisualStyleBackColor = true;
@@ -89,10 +89,10 @@ namespace HomePage
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(313, 167);
-            this.button4.Margin = new System.Windows.Forms.Padding(1);
+            this.button4.Location = new System.Drawing.Point(760, 456);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 21);
+            this.button4.Size = new System.Drawing.Size(187, 57);
             this.button4.TabIndex = 4;
             this.button4.Text = "Resturant";
             this.button4.UseVisualStyleBackColor = true;
@@ -100,56 +100,58 @@ namespace HomePage
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(208, 271);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker1.Location = new System.Drawing.Point(505, 741);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(485, 47);
             this.dateTimePicker1.TabIndex = 5;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 245);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Location = new System.Drawing.Point(668, 670);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 15);
+            this.label1.Size = new System.Drawing.Size(132, 41);
             this.label1.TabIndex = 6;
             this.label1.Text = "Check In";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(474, 271);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker2.Location = new System.Drawing.Point(1151, 741);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(208, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(499, 47);
             this.dateTimePicker2.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(570, 239);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label2.Location = new System.Drawing.Point(1384, 653);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.Size = new System.Drawing.Size(157, 41);
             this.label2.TabIndex = 8;
             this.label2.Text = "Check Out";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Admin
             // 
-            this.Admin.Location = new System.Drawing.Point(695, 26);
+            this.Admin.Location = new System.Drawing.Point(1688, 71);
+            this.Admin.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.Admin.Name = "Admin";
-            this.Admin.Size = new System.Drawing.Size(75, 23);
+            this.Admin.Size = new System.Drawing.Size(182, 63);
             this.Admin.TabIndex = 9;
-            this.Admin.Text = "button5";
+            this.Admin.Text = "Admin";
             this.Admin.UseVisualStyleBackColor = true;
+            this.Admin.Click += new System.EventHandler(this.Admin_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 371);
+            this.ClientSize = new System.Drawing.Size(1984, 1014);
             this.Controls.Add(this.Admin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
@@ -160,7 +162,7 @@ namespace HomePage
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
