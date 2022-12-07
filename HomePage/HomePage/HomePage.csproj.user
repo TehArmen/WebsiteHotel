@@ -19,6 +19,9 @@
     <Compile Update="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Reservation_Completed.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Rooms.cs">
       <SubType>Form</SubType>
     </Compile>
