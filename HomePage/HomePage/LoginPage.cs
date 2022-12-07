@@ -1,4 +1,4 @@
-﻿namespace HomePage
+namespace HomePage
 {
     using HomePage.Models;
     using System;
@@ -24,6 +24,10 @@
             var credentials = myContext.Set<LoginPortal>().FirstOrDefault();
             if (credentials.username == textBox1.Text && credentials.pass == textBox2.Text)
             {
+            var context = new MyDBContext();
+           // var credentials = context.Set<LoginPortal>().FirstOrDefault(m => m.userID == 155);
+            if (credentials.username == textBox1.Text && credentials.pass == textBox2.Text) 
+            { 
                 this.Hide();
                 AdminPortal admin = new AdminPortal();
                 admin.Show();

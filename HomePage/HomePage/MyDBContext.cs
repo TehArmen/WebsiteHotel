@@ -15,9 +15,11 @@
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer("Data Source =DESKTOP-UDAJ3HN\\SQLEXPRESS;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
             //optionsBuilder.UseSqlServer("Data Source =TEHARMEN\\SQLEXPRESS01;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
-            base.OnConfiguring(optionsBuilder);
+
+            //optionsBuilder.UseSqlServer("Data Source =DESKTOP-FGGPAUN\\SQLEXPRESS01;Initial Catalog= Test_base;Integrated Security =True;TrustServerCertificate=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
