@@ -30,7 +30,7 @@
         {
             this.btn_goback = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.btn_cr = new System.Windows.Forms.Button();
+            this.btn_confirmation = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -83,16 +83,19 @@
             this.checkBox1.TabIndex = 66;
             this.checkBox1.Text = "I agree with the terms and conditions of this Hotel";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // btn_cr
+            // btn_confirmation
             // 
-            this.btn_cr.BackColor = System.Drawing.Color.LimeGreen;
-            this.btn_cr.Location = new System.Drawing.Point(278, 386);
-            this.btn_cr.Name = "btn_cr";
-            this.btn_cr.Size = new System.Drawing.Size(185, 23);
-            this.btn_cr.TabIndex = 65;
-            this.btn_cr.Text = "Complete Reservation";
-            this.btn_cr.UseVisualStyleBackColor = false;
+            this.btn_confirmation.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_confirmation.Enabled = false;
+            this.btn_confirmation.Location = new System.Drawing.Point(278, 386);
+            this.btn_confirmation.Name = "btn_confirmation";
+            this.btn_confirmation.Size = new System.Drawing.Size(185, 23);
+            this.btn_confirmation.TabIndex = 65;
+            this.btn_confirmation.Text = "Complete Reservation";
+            this.btn_confirmation.UseVisualStyleBackColor = false;
+            this.btn_confirmation.Click += new System.EventHandler(this.btn_confirmation_Click);
             // 
             // label16
             // 
@@ -424,7 +427,7 @@
             this.Controls.Add(this.firstName);
             this.Controls.Add(this.btn_goback);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.btn_cr);
+            this.Controls.Add(this.btn_confirmation);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label14);
@@ -454,7 +457,7 @@
 
         private Button btn_goback;
         private CheckBox checkBox1;
-        private Button btn_cr;
+        private Button btn_confirmation;
         private Label label16;
         private Label label17;
         private Label label14;

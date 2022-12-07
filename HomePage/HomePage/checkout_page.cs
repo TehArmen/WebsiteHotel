@@ -100,7 +100,14 @@ namespace HomePage
 
         private void setButtonVisibility()
         {
-            if ((fName.Text != String.Empty) && (LastName.Text != String.Empty))
+            if ((fName.Text != String.Empty) && (LastName.Text != String.Empty) && 
+                (Email.Text != String.Empty) && (Phone.Text != String.Empty) && 
+                (Country.Text != String.Empty) && (zipCode.Text != String.Empty) &&
+                (Address1.Text != String.Empty) && (Address2.Text != String.Empty) &&
+                (City.Text != String.Empty) && (State.Text != String.Empty) &&
+                (cardNumber.Text != String.Empty) && (nameCC.Text != String.Empty) &&
+                (cVV.Text != String.Empty))
+
             {
                 btn_cr.Enabled = true;
             }

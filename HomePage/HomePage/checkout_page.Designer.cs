@@ -47,7 +47,6 @@
             this.City = new System.Windows.Forms.TextBox();
             this.LastName = new System.Windows.Forms.TextBox();
             this.Phone = new System.Windows.Forms.TextBox();
-            this.zipCode = new System.Windows.Forms.TextBox();
             this.Address2 = new System.Windows.Forms.TextBox();
             this.State = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@
             this.Exp = new System.Windows.Forms.DateTimePicker();
             this.btn_cr = new System.Windows.Forms.Button();
             this.btn_goback = new System.Windows.Forms.Button();
+            this.zipCode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -186,7 +186,7 @@
             // fName
             // 
             this.fName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fName.Location = new System.Drawing.Point(160, 71);
+            this.fName.Location = new System.Drawing.Point(160, 75);
             this.fName.Name = "fName";
             this.fName.Size = new System.Drawing.Size(150, 20);
             this.fName.TabIndex = 12;
@@ -245,15 +245,6 @@
             this.Phone.Size = new System.Drawing.Size(150, 20);
             this.Phone.TabIndex = 18;
             this.Phone.TextChanged += new System.EventHandler(this.Phone_TextChanged);
-            // 
-            // zipCode
-            // 
-            this.zipCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.zipCode.Location = new System.Drawing.Point(450, 125);
-            this.zipCode.Name = "zipCode";
-            this.zipCode.Size = new System.Drawing.Size(150, 20);
-            this.zipCode.TabIndex = 19;
-            this.zipCode.TextChanged += new System.EventHandler(this.zipCode_TextChanged);
             // 
             // Address2
             // 
@@ -386,6 +377,15 @@
             this.btn_goback.UseVisualStyleBackColor = true;
             this.btn_goback.Click += new System.EventHandler(this.btn_goback_Click);
             // 
+            // zipCode
+            // 
+            this.zipCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.zipCode.Location = new System.Drawing.Point(450, 125);
+            this.zipCode.Name = "zipCode";
+            this.zipCode.Size = new System.Drawing.Size(150, 20);
+            this.zipCode.TabIndex = 19;
+            this.zipCode.TextChanged += new System.EventHandler(this.zipCode_TextChanged);
+            // 
             // checkout_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -453,7 +453,6 @@
         private TextBox City;
         private TextBox LastName;
         private TextBox Phone;
-        private TextBox zipCode;
         private TextBox Address2;
         private TextBox State;
         private Label label13;
@@ -471,6 +470,6 @@
         private TextBox nameCC;
         private TextBox cVV;
         private DateTimePicker Exp;
-        private Label label18;
+        private TextBox zipCode;
     }
 }
