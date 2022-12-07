@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+
 
 namespace HomePage
 {
@@ -23,7 +25,7 @@ namespace HomePage
         private void Confirmation_Load(object sender, EventArgs e)
         {
             var context = new MyDBContext();
-            var customerInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == 155);
+            var customerInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == 389);
 
             firstName.Text = customerInfo.FirstName;
             lastName.Text = customerInfo.LastName;
@@ -46,5 +48,23 @@ namespace HomePage
         {
 
         }
+
+        private void btn_confirmation_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Reservation_Completed Conf = new Reservation_Completed();
+            Conf.Show();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                btn_confirmation.Enabled = true;
+            }
+            else
+            { btn_confirmation.Enabled = false; }
+
+        }
+        };
     }
-}
