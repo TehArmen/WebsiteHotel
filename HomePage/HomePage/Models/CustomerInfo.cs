@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
     
-    internal class CustomerInfo
+    public class CustomerInfo
     {
         public int CustomerID { get; set; }
         public string FirstName { get; set; }
