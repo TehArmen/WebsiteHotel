@@ -49,6 +49,7 @@ namespace HomePage
             Random rnd = new Random();
 
             newCus.CustomerID = rnd.Next(999);
+            Program.CustID.custID = newCus.CustomerID;
             newCus.FirstName = fName.Text;
             newCus.LastName = LastName.Text;
             newCus.Email = Email.Text;
@@ -161,6 +162,11 @@ namespace HomePage
         private void cVV_TextChanged(object sender, EventArgs e)
         {
             setButtonVisibility();
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

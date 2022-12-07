@@ -46,5 +46,10 @@ namespace HomePage
         {
 
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            label18.Text = Program.CustID.custID.ToString();
+        }
     }
 }
