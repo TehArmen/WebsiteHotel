@@ -13,5 +13,9 @@ namespace HomePage
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+        public static class CustID
+        {
+            public static int custID;
+        }
     }
 }
