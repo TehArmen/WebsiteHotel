@@ -32,33 +32,34 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelkingBed = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.kingBed = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.bookNow = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.queenBed = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.twoqueenBeds = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.twoTwinBeds = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.searchOpenRooms = new System.Windows.Forms.Button();
+            this.panelkingBed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,18 +71,25 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "MM/DD/YYYY";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(439, 131);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 12, 13, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CustomFormat = "MM/DD/YYYY";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(684, 131);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker2.TabIndex = 1;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 12, 16, 0, 0, 0, 0);
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label1
             // 
@@ -105,17 +113,17 @@
             this.label2.Text = "Check-out";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // panel1
+            // panelkingBed
             // 
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(375, 160);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(699, 417);
-            this.panel1.TabIndex = 4;
+            this.panelkingBed.Controls.Add(this.label7);
+            this.panelkingBed.Controls.Add(this.comboBox1);
+            this.panelkingBed.Controls.Add(this.pictureBox1);
+            this.panelkingBed.Controls.Add(this.kingBed);
+            this.panelkingBed.Controls.Add(this.label3);
+            this.panelkingBed.Location = new System.Drawing.Point(375, 160);
+            this.panelkingBed.Name = "panelkingBed";
+            this.panelkingBed.Size = new System.Drawing.Size(699, 417);
+            this.panelkingBed.TabIndex = 4;
             // 
             // label7
             // 
@@ -140,6 +148,7 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "0";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -152,17 +161,16 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // checkBox1
+            // kingBed
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(426, 189);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 19);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Standard Rate";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.kingBed.AutoSize = true;
+            this.kingBed.Location = new System.Drawing.Point(426, 189);
+            this.kingBed.Name = "kingBed";
+            this.kingBed.Size = new System.Drawing.Size(99, 19);
+            this.kingBed.TabIndex = 1;
+            this.kingBed.Text = "Standard Rate";
+            this.kingBed.UseVisualStyleBackColor = true;
+            this.kingBed.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label3
             // 
@@ -174,21 +182,32 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "King Bed";
             // 
-            // button1
+            // label11
             // 
-            this.button1.Location = new System.Drawing.Point(1183, 197);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 74);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Book Now";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(1183, 306);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 15);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "label11";
+            this.label11.Visible = false;
+            // 
+            // bookNow
+            // 
+            this.bookNow.Location = new System.Drawing.Point(1183, 197);
+            this.bookNow.Name = "bookNow";
+            this.bookNow.Size = new System.Drawing.Size(164, 74);
+            this.bookNow.TabIndex = 5;
+            this.bookNow.Text = "Book Now";
+            this.bookNow.UseVisualStyleBackColor = true;
+            this.bookNow.Click += new System.EventHandler(this.bookNow_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.checkBox2);
+            this.panel2.Controls.Add(this.queenBed);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(375, 600);
             this.panel2.Name = "panel2";
@@ -228,18 +247,19 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 23);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.Text = "0";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // checkBox2
+            // queenBed
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(426, 183);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(99, 19);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Standard Rate";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.queenBed.AutoSize = true;
+            this.queenBed.Location = new System.Drawing.Point(426, 183);
+            this.queenBed.Name = "queenBed";
+            this.queenBed.Size = new System.Drawing.Size(99, 19);
+            this.queenBed.TabIndex = 1;
+            this.queenBed.Text = "Standard Rate";
+            this.queenBed.UseVisualStyleBackColor = true;
+            this.queenBed.CheckedChanged += new System.EventHandler(this.queenBed_CheckedChanged);
+            this.queenBed.CheckStateChanged += new System.EventHandler(this.queenBed_CheckedChanged);
             // 
             // label6
             // 
@@ -256,7 +276,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.comboBox3);
-            this.panel3.Controls.Add(this.checkBox3);
+            this.panel3.Controls.Add(this.twoqueenBeds);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(375, 1040);
             this.panel3.Name = "panel3";
@@ -296,18 +316,18 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 23);
             this.comboBox3.TabIndex = 3;
             this.comboBox3.Text = "0";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
-            // checkBox3
+            // twoqueenBeds
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(426, 183);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(99, 19);
-            this.checkBox3.TabIndex = 1;
-            this.checkBox3.Text = "Standard Rate";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.twoqueenBeds.AutoSize = true;
+            this.twoqueenBeds.Location = new System.Drawing.Point(426, 183);
+            this.twoqueenBeds.Name = "twoqueenBeds";
+            this.twoqueenBeds.Size = new System.Drawing.Size(99, 19);
+            this.twoqueenBeds.TabIndex = 1;
+            this.twoqueenBeds.Text = "Standard Rate";
+            this.twoqueenBeds.UseVisualStyleBackColor = true;
+            this.twoqueenBeds.CheckedChanged += new System.EventHandler(this.twoqueenBeds_CheckedChanged);
             // 
             // label8
             // 
@@ -325,7 +345,7 @@
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.comboBox4);
-            this.panel4.Controls.Add(this.checkBox4);
+            this.panel4.Controls.Add(this.twoTwinBeds);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Location = new System.Drawing.Point(375, 1480);
             this.panel4.Name = "panel4";
@@ -365,18 +385,18 @@
             this.comboBox4.Size = new System.Drawing.Size(121, 23);
             this.comboBox4.TabIndex = 3;
             this.comboBox4.Text = "0";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
-            // checkBox4
+            // twoTwinBeds
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Checked = true;
-            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.Location = new System.Drawing.Point(426, 189);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(99, 19);
-            this.checkBox4.TabIndex = 1;
-            this.checkBox4.Text = "Standard Rate";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.twoTwinBeds.AutoSize = true;
+            this.twoTwinBeds.Location = new System.Drawing.Point(426, 189);
+            this.twoTwinBeds.Name = "twoTwinBeds";
+            this.twoTwinBeds.Size = new System.Drawing.Size(99, 19);
+            this.twoTwinBeds.TabIndex = 1;
+            this.twoTwinBeds.Text = "Standard Rate";
+            this.twoTwinBeds.UseVisualStyleBackColor = true;
+            this.twoTwinBeds.CheckedChanged += new System.EventHandler(this.twoTwinBeds_CheckedChanged);
             // 
             // label10
             // 
@@ -388,27 +408,29 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "2 Twin Beds";
             // 
-            // button2
+            // searchOpenRooms
             // 
-            this.button2.Location = new System.Drawing.Point(926, 131);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
+            this.searchOpenRooms.Location = new System.Drawing.Point(926, 131);
+            this.searchOpenRooms.Name = "searchOpenRooms";
+            this.searchOpenRooms.Size = new System.Drawing.Size(86, 23);
+            this.searchOpenRooms.TabIndex = 9;
+            this.searchOpenRooms.Text = "Search";
+            this.searchOpenRooms.UseVisualStyleBackColor = true;
+            this.searchOpenRooms.Click += new System.EventHandler(this.button2_Click);
             // 
             // Rooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1484, 924);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1484, 556);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.searchOpenRooms);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.bookNow);
+            this.Controls.Add(this.panelkingBed);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker2);
@@ -416,8 +438,8 @@
             this.Name = "Rooms";
             this.Text = "Rooms";
             this.Load += new System.EventHandler(this.Rooms_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelkingBed.ResumeLayout(false);
+            this.panelkingBed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -439,24 +461,24 @@
         private DateTimePicker dateTimePicker2;
         private Label label1;
         private Label label2;
-        private Panel panel1;
+        private Panel panelkingBed;
         private ComboBox comboBox1;
         private PictureBox pictureBox1;
-        private CheckBox checkBox1;
+        private CheckBox kingBed;
         private Label label3;
-        private Button button1;
+        private Button bookNow;
         private Panel panel2;
         private ComboBox comboBox2;
-        private CheckBox checkBox2;
+        private CheckBox queenBed;
         private Label label6;
         private Panel panel3;
         private ComboBox comboBox3;
-        private CheckBox checkBox3;
+        private CheckBox twoqueenBeds;
         private Label label8;
         private Panel panel4;
         private Label label9;
         private ComboBox comboBox4;
-        private CheckBox checkBox4;
+        private CheckBox twoTwinBeds;
         private Label label10;
         private Label label7;
         private Label label5;
@@ -464,6 +486,7 @@
         private Label label4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Button button2;
+        private Button searchOpenRooms;
+        private Label label11;
     }
 }

@@ -12,6 +12,15 @@ namespace HomePage
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+        }
+
+        public static class CustID
+        {
+            public static int custID;
+            public static int HotelroomID;
+            
+
         }
         public static class CustID
         {

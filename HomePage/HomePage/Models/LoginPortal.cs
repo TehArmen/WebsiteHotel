@@ -1,12 +1,12 @@
-﻿namespace HomePage.Models
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-    internal class LoginPortal
+namespace HomePage.Models
+{
+    public class LoginPortal
     {
         public int userID { get; set; }
 
