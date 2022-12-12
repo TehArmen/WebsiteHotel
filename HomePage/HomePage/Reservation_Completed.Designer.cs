@@ -36,6 +36,7 @@
 
         #endregion
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         private Label label1;
         private Label label2;
@@ -46,6 +47,8 @@
         private LinkLabel linkLabel1;
         private Label email;
         private Label codeConf;
+=======
+>>>>>>> parent of fb4442a (Admin and Reservation edits)
 =======
 >>>>>>> parent of fb4442a (Admin and Reservation edits)
     }
