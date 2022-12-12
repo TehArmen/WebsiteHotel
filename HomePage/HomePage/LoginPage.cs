@@ -23,7 +23,7 @@ namespace HomePage
             var context = new MyDBContext();
 
           
-            var credentials = context.Set<LoginPortal>().FirstOrDefault(m => m.userID == 1001);
+            var credentials = context.Set<LoginPortal>().FirstOrDefault(m => m.userID == 155);
             if (credentials.username == textBox1.Text && credentials.pass == textBox2.Text) 
             { 
                 this.Hide();

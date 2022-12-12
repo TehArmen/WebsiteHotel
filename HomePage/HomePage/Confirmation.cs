@@ -56,9 +56,7 @@ namespace HomePage
 
         private void btn_confirmation_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Reservation_Completed Conf = new Reservation_Completed();
-            Conf.Show();
+
             var context = new MyDBContext();
             var reservationInfo = new HotelReservations();
             reservationInfo.reservationID = CustID.HotelReservationID;
@@ -80,6 +78,10 @@ namespace HomePage
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }
+
+            this.Hide();
+            Reservation_Completed Conf = new Reservation_Completed();
+            Conf.Show();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
