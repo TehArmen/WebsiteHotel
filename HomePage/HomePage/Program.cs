@@ -22,5 +22,9 @@ namespace HomePage
             
 
         }
+        public static class CustID
+        {
+            public static int custID;
+        }
     }
 }

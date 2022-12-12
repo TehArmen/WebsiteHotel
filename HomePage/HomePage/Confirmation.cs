@@ -1,4 +1,4 @@
-﻿using HomePage.Models;
+using HomePage.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
+using System.Net.Mail;
 using static HomePage.Program;
 
 
@@ -55,6 +59,20 @@ namespace HomePage
             this.Hide();
             Reservation_Completed Conf = new Reservation_Completed();
             Conf.Show();
+
+            using (MailMessage mail = new MailMessage ())
+            {
+                mail.From = new MailAddress("hotelwebsite07@gmail.com");
+                mail.To.Add(email.Text);
+                mail.Subject = "Test Sending Mail";
+                mail.Body = "<h1> This is body </h1>";
+                mail.IsBodyHtml= true;
+
+                using System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
+                smtp.Credentials = new System.Net.NetworkCredential("hotelwebsite07@gmail.com", "ierznlptvudwigir");
+                smtp.EnableSsl = true;
+                smtp.Send(mail);
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -67,5 +85,6 @@ namespace HomePage
             { btn_confirmation.Enabled = false; }
 
         }
-        };
+
+        }
     }
