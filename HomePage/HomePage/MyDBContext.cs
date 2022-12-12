@@ -10,10 +10,9 @@
 
     public class MyDBContext: DbContext
     {
-        public MyDBContext(): base()
-        {
 
-        }
+       
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
@@ -26,20 +25,18 @@
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-
             var CustomerINFO = modelBuilder.Entity<CustomerInfo>();
-
             CustomerINFO.HasKey(m => m.CustomerID);
-            
-            //var Customer = modelBuilder.Entity<Customer>();
 
             var Login = modelBuilder.Entity<LoginPortal>();
-
-            // Customer.HasKey(m => m.customerID);
-
+          
             Login.HasKey(m => m.userID);
+
+            var Rooms = modelBuilder.Entity<HotelRooms>();
+
+            Rooms.HasKey(m => m.roomID);
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
