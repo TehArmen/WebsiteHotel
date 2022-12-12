@@ -16,5 +16,10 @@ namespace HomePage
         {
             InitializeComponent();
         }
+
+        private void Booking_Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

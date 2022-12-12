@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using System.Net.Mail;
 using static HomePage.Program;
 using Microsoft.EntityFrameworkCore.Scaffolding;
+using FluentEmail.Core;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace HomePage
 {
@@ -22,35 +24,37 @@ namespace HomePage
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
+        {
+            //var context = new MyDBContext();
+            //var reservationNum = context.Set<HotelReservations>().FirstOrDefault(m => m.reservationID == CustID.HotelReservationID);
+            //label3.Text = reservationNum.reservationID.ToString();
+        }
+
         private void Reservation_Completed_Load(object sender, EventArgs e)
         {
             var context = new MyDBContext();
-            var cusInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == CustID.custID);
-
-            codeConf.Text = cusInfo.CustomerID.ToString();
-            email.Text = cusInfo.Email;
+            var reservationNum = context.Set<HotelReservations>().FirstOrDefault(m => m.reservationID == CustID.HotelReservationID);
+            var emailInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == CustID.custID);
+            
+            label3.Text = reservationNum.reservationID.ToString();
+            label5.Text = emailInfo.Email;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            var context = new MyDBContext();
-            var emailInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == CustID.custID);
-
             using (MailMessage mail = new MailMessage())
             {
                 mail.From = new MailAddress("hotelwebsite07@gmail.com");
-                mail.To.Add(emailInfo.Email);
+                mail.To.Add(label5.Text);
                 mail.Subject = "Test Sending Mail";
-                mail.Body = "<h1> This is 2nd copy </h1>";
+                mail.Body = "<h1> This is body </h1>";
                 mail.IsBodyHtml = true;
 
                 using System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);

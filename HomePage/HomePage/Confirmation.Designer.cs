@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Confirmation));
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn_confirmation = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -62,6 +63,8 @@
             this.cvv = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -77,11 +80,11 @@
             // 
             // btn_confirmation
             // 
-            this.btn_confirmation.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_confirmation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(224)))), ((int)(((byte)(241)))));
             this.btn_confirmation.Enabled = false;
-            this.btn_confirmation.Location = new System.Drawing.Point(278, 386);
+            this.btn_confirmation.Location = new System.Drawing.Point(283, 373);
             this.btn_confirmation.Name = "btn_confirmation";
-            this.btn_confirmation.Size = new System.Drawing.Size(185, 23);
+            this.btn_confirmation.Size = new System.Drawing.Size(163, 36);
             this.btn_confirmation.TabIndex = 65;
             this.btn_confirmation.Text = "Complete Reservation";
             this.btn_confirmation.UseVisualStyleBackColor = false;
@@ -253,9 +256,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(33, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 34;
-            this.label1.Text = "CHECKOUT";
+            this.label1.Text = "CONFIRMATION";
             // 
             // firstName
             // 
@@ -395,13 +398,24 @@
             this.label18.TabIndex = 82;
             this.label18.Text = "label18";
             this.label18.Click += new System.EventHandler(this.label18_Click);
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(592, 278);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 131);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 82;
+            this.pictureBox1.TabStop = false;
             // 
             // Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(195)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label18);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.date);
             this.Controls.Add(this.cvv);
             this.Controls.Add(this.nameOnCard);
@@ -438,6 +452,7 @@
             this.Name = "Confirmation";
             this.Text = "Confirmation";
             this.Load += new System.EventHandler(this.Confirmation_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,5 +493,6 @@
         private Label cvv;
         private Label date;
         private Label label18;
+        private PictureBox pictureBox1;
     }
 }

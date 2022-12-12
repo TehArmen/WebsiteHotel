@@ -56,10 +56,18 @@ namespace HomePage
 
         private void label18_Click(object sender, EventArgs e)
         {
-            label18.Text = CustID.custID.ToString();
+           
         }
         private void btn_confirmation_Click(object sender, EventArgs e)
         { 
+
+            var context = new MyDBContext();
+            var reservationInfo = new HotelReservations();
+            reservationInfo.reservationID = CustID.HotelReservationID;
+            reservationInfo.customerID = CustID.custID;
+            reservationInfo.roomID = CustID.HotelroomID;
+            context.Set<HotelReservations>().Add(reservationInfo);
+            context.SaveChanges();
 
             using (MailMessage mail = new MailMessage ())
             {
