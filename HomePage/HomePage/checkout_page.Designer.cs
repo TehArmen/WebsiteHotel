@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(checkout_page));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,8 +60,9 @@
             this.cVV = new System.Windows.Forms.TextBox();
             this.Exp = new System.Windows.Forms.DateTimePicker();
             this.btn_cr = new System.Windows.Forms.Button();
-            this.btn_goback = new System.Windows.Forms.Button();
             this.zipCode = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -357,25 +359,16 @@
             // 
             // btn_cr
             // 
-            this.btn_cr.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_cr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(224)))), ((int)(((byte)(241)))));
             this.btn_cr.Enabled = false;
-            this.btn_cr.Location = new System.Drawing.Point(258, 375);
+            this.btn_cr.Font = new System.Drawing.Font("Noto Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_cr.Location = new System.Drawing.Point(280, 354);
             this.btn_cr.Name = "btn_cr";
-            this.btn_cr.Size = new System.Drawing.Size(185, 23);
+            this.btn_cr.Size = new System.Drawing.Size(163, 36);
             this.btn_cr.TabIndex = 31;
             this.btn_cr.Text = "Complete Reservation";
             this.btn_cr.UseVisualStyleBackColor = false;
             this.btn_cr.Click += new System.EventHandler(this.btn_cr_Click);
-            // 
-            // btn_goback
-            // 
-            this.btn_goback.Location = new System.Drawing.Point(50, 375);
-            this.btn_goback.Name = "btn_goback";
-            this.btn_goback.Size = new System.Drawing.Size(75, 23);
-            this.btn_goback.TabIndex = 33;
-            this.btn_goback.Text = "Go Back";
-            this.btn_goback.UseVisualStyleBackColor = true;
-            this.btn_goback.Click += new System.EventHandler(this.btn_goback_Click);
             // 
             // zipCode
             // 
@@ -386,12 +379,23 @@
             this.zipCode.TabIndex = 19;
             this.zipCode.TextChanged += new System.EventHandler(this.zipCode_TextChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(592, 278);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 131);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // checkout_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(195)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_goback);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_cr);
             this.Controls.Add(this.Exp);
             this.Controls.Add(this.cVV);
@@ -427,6 +431,7 @@
             this.Name = "checkout_page";
             this.Text = "checkout_page";
             this.Load += new System.EventHandler(this.checkout_page_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,11 +470,11 @@
         private TextBox textBox13;
         private DateTimePicker dateTimePicker1;
         private Button btn_cr;
-        private Button btn_goback;
         private TextBox cardNumber;
         private TextBox nameCC;
         private TextBox cVV;
         private DateTimePicker Exp;
         private TextBox zipCode;
+        private PictureBox pictureBox1;
     }
 }

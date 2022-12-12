@@ -47,10 +47,8 @@ namespace HomePage
             var context = new MyDBContext();
 
             var newCus = new CustomerInfo();
-            Random rnd = new Random();
-
-            newCus.CustomerID = rnd.Next(999);
-            CustID.custID = newCus.CustomerID;
+            
+            newCus.CustomerID = CustID.custID;
             newCus.FirstName = fName.Text;
             newCus.LastName = LastName.Text;
             newCus.Email = Email.Text;

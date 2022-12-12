@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rooms));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@
             this.twoTwinBeds = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.searchOpenRooms = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelkingBed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -67,13 +69,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "MM/DD/YYYY";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(439, 131);
+            this.dateTimePicker1.Location = new System.Drawing.Point(440, 165);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 0;
@@ -84,7 +87,7 @@
             // 
             this.dateTimePicker2.CustomFormat = "MM/DD/YYYY";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(684, 131);
+            this.dateTimePicker2.Location = new System.Drawing.Point(685, 165);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker2.TabIndex = 1;
@@ -95,7 +98,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(491, 107);
+            this.label1.Location = new System.Drawing.Point(492, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 21);
             this.label1.TabIndex = 2;
@@ -106,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(740, 107);
+            this.label2.Location = new System.Drawing.Point(741, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 21);
             this.label2.TabIndex = 3;
@@ -120,7 +123,7 @@
             this.panelkingBed.Controls.Add(this.pictureBox1);
             this.panelkingBed.Controls.Add(this.kingBed);
             this.panelkingBed.Controls.Add(this.label3);
-            this.panelkingBed.Location = new System.Drawing.Point(375, 160);
+            this.panelkingBed.Location = new System.Drawing.Point(362, 257);
             this.panelkingBed.Name = "panelkingBed";
             this.panelkingBed.Size = new System.Drawing.Size(699, 417);
             this.panelkingBed.TabIndex = 4;
@@ -152,7 +155,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HomePage.Properties.Resources.deluxe_king;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(19, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(367, 314);
@@ -174,18 +177,17 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(384, 21);
+            this.label3.Location = new System.Drawing.Point(392, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 37);
+            this.label3.Size = new System.Drawing.Size(294, 78);
             this.label3.TabIndex = 0;
-            this.label3.Text = "King Bed";
+            this.label3.Text = "1 King Bed, Superior Guest Room";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1183, 306);
+            this.label11.Location = new System.Drawing.Point(1183, 356);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 15);
             this.label11.TabIndex = 6;
@@ -194,12 +196,14 @@
             // 
             // bookNow
             // 
-            this.bookNow.Location = new System.Drawing.Point(1183, 197);
+            this.bookNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(224)))), ((int)(((byte)(241)))));
+            this.bookNow.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bookNow.Location = new System.Drawing.Point(1183, 257);
             this.bookNow.Name = "bookNow";
             this.bookNow.Size = new System.Drawing.Size(164, 74);
             this.bookNow.TabIndex = 5;
             this.bookNow.Text = "Book Now";
-            this.bookNow.UseVisualStyleBackColor = true;
+            this.bookNow.UseVisualStyleBackColor = false;
             this.bookNow.Click += new System.EventHandler(this.bookNow_Click);
             // 
             // panel2
@@ -209,7 +213,7 @@
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.queenBed);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(375, 600);
+            this.panel2.Location = new System.Drawing.Point(362, 697);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(699, 417);
             this.panel2.TabIndex = 6;
@@ -226,7 +230,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HomePage.Properties.Resources.The_Chatwal_Luxury_Collection_Hotel_New_York_Superior_Queen_Room_1024x1024;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(19, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(367, 314);
@@ -265,11 +269,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(384, 21);
+            this.label6.Location = new System.Drawing.Point(392, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 37);
+            this.label6.Size = new System.Drawing.Size(300, 37);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Queen Bed";
+            this.label6.Text = "1 King Bed, Studio Suite";
             // 
             // panel3
             // 
@@ -278,7 +282,7 @@
             this.panel3.Controls.Add(this.comboBox3);
             this.panel3.Controls.Add(this.twoqueenBeds);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(375, 1040);
+            this.panel3.Location = new System.Drawing.Point(362, 1137);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(699, 417);
             this.panel3.TabIndex = 7;
@@ -295,7 +299,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HomePage.Properties.Resources.Troubadour_TroubieQueen;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(19, 21);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(367, 314);
@@ -331,13 +335,12 @@
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(384, 21);
+            this.label8.Location = new System.Drawing.Point(392, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 37);
+            this.label8.Size = new System.Drawing.Size(296, 79);
             this.label8.TabIndex = 0;
-            this.label8.Text = "2 Queen Beds";
+            this.label8.Text = "2 Double Beds, Terrace Room";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel4
@@ -347,14 +350,14 @@
             this.panel4.Controls.Add(this.comboBox4);
             this.panel4.Controls.Add(this.twoTwinBeds);
             this.panel4.Controls.Add(this.label10);
-            this.panel4.Location = new System.Drawing.Point(375, 1480);
+            this.panel4.Location = new System.Drawing.Point(362, 1577);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(699, 417);
             this.panel4.TabIndex = 8;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::HomePage.Properties.Resources._1_600x388;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(19, 21);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(367, 314);
@@ -400,30 +403,43 @@
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(384, 21);
+            this.label10.Location = new System.Drawing.Point(392, 21);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(157, 37);
+            this.label10.Size = new System.Drawing.Size(302, 87);
             this.label10.TabIndex = 0;
-            this.label10.Text = "2 Twin Beds";
+            this.label10.Text = "2 Double Beds, Atrium View, Studio Suite";
             // 
             // searchOpenRooms
             // 
-            this.searchOpenRooms.Location = new System.Drawing.Point(926, 131);
+            this.searchOpenRooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(224)))), ((int)(((byte)(241)))));
+            this.searchOpenRooms.Font = new System.Drawing.Font("Noto Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchOpenRooms.Location = new System.Drawing.Point(927, 165);
             this.searchOpenRooms.Name = "searchOpenRooms";
             this.searchOpenRooms.Size = new System.Drawing.Size(86, 23);
             this.searchOpenRooms.TabIndex = 9;
             this.searchOpenRooms.Text = "Search";
-            this.searchOpenRooms.UseVisualStyleBackColor = true;
+            this.searchOpenRooms.UseVisualStyleBackColor = false;
             this.searchOpenRooms.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(65, 46);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(245, 193);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
             // 
             // Rooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(195)))));
             this.ClientSize = new System.Drawing.Size(1484, 556);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.searchOpenRooms);
             this.Controls.Add(this.panel4);
@@ -450,6 +466,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,5 +505,6 @@
         private PictureBox pictureBox4;
         private Button searchOpenRooms;
         private Label label11;
+        private PictureBox pictureBox5;
     }
 }

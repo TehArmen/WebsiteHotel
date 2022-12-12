@@ -1,6 +1,6 @@
 namespace HomePage
 {
-    using HomePage.Models;
+    using global::HomePage.Models;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;

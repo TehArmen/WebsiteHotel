@@ -59,6 +59,13 @@ namespace HomePage
             this.Hide();
             Reservation_Completed Conf = new Reservation_Completed();
             Conf.Show();
+            var context = new MyDBContext();
+            var reservationInfo = new HotelReservations();
+            reservationInfo.reservationID = CustID.HotelReservationID;
+            reservationInfo.customerID = CustID.custID;
+            reservationInfo.roomID = CustID.HotelroomID;
+            context.Set<HotelReservations>().Add(reservationInfo);
+            context.SaveChanges();
 
             using (MailMessage mail = new MailMessage ())
             {
@@ -69,7 +76,7 @@ namespace HomePage
                 mail.IsBodyHtml= true;
 
                 using System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new System.Net.NetworkCredential("hotelwebsite07@gmail.com", "ierznlptvudwigir");
+                smtp.Credentials = new System.Net.NetworkCredential("hotelwebsite07@gmail.com", "tjexthsrlruaetgl");
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }
