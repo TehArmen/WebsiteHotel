@@ -1,6 +1,6 @@
 namespace HomePage
 {
-    partial class HomePage
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@ namespace HomePage
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();

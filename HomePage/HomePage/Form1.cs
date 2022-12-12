@@ -4,11 +4,11 @@ using HomePage.Models;
 namespace HomePage
 {
   
-    public partial class HomePage : Form
+    public partial class Form1 : Form
     {
 
        
-        public HomePage()
+        public Form1()
         {
             InitializeComponent();
           

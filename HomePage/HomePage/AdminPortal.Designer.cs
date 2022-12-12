@@ -86,23 +86,23 @@
             // 
             // customerBindingSource3
             // 
-            this.customerBindingSource3.DataSource = typeof(HomePage.Models.CustomerInfo);
+            //this.customerBindingSource3.DataSource = typeof(Form1.Models.CustomerInfo);
             // 
             // customerBindingSource2
             // 
-            this.customerBindingSource2.DataSource = typeof(HomePage.Models.CustomerInfo);
+            //this.customerBindingSource2.DataSource = typeof(Form1.Models.CustomerInfo);
             // 
             // customerBindingSource1
             // 
-            this.customerBindingSource1.DataSource = typeof(HomePage.Models.CustomerInfo);
+            //this.customerBindingSource1.DataSource = typeof(Form1.Models.CustomerInfo);
             // 
             // customerBindingSource
             // 
-            this.customerBindingSource.DataSource = typeof(HomePage.Models.CustomerInfo);
+            //this.customerBindingSource.DataSource = typeof(Form1.Models.CustomerInfo);
             // 
             // myDBContextBindingSource
             // 
-            this.myDBContextBindingSource.DataSource = typeof(HomePage.MyDBContext);
+            //this.myDBContextBindingSource.DataSource = typeof(Form1.MyDBContext);
             // 
             // button1
             // 

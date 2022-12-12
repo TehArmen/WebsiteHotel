@@ -60,7 +60,7 @@ namespace HomePage
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HomePage homepage = new HomePage();
+            Form1 homepage = new Form1();
             homepage.Show();
         }
     }
