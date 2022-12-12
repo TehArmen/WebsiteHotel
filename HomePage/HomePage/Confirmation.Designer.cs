@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_goback = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn_confirmation = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -64,15 +63,6 @@
             this.date = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btn_goback
-            // 
-            this.btn_goback.Location = new System.Drawing.Point(70, 386);
-            this.btn_goback.Name = "btn_goback";
-            this.btn_goback.Size = new System.Drawing.Size(75, 23);
-            this.btn_goback.TabIndex = 67;
-            this.btn_goback.Text = "Go Back";
-            this.btn_goback.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -425,7 +415,6 @@
             this.Controls.Add(this.country);
             this.Controls.Add(this.email);
             this.Controls.Add(this.firstName);
-            this.Controls.Add(this.btn_goback);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btn_confirmation);
             this.Controls.Add(this.label16);
@@ -454,8 +443,6 @@
         }
 
         #endregion
-
-        private Button btn_goback;
         private CheckBox checkBox1;
         private Button btn_confirmation;
         private Label label16;

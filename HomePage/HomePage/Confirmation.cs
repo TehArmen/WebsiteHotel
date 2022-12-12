@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using static HomePage.Program;
 
 
 namespace HomePage
@@ -25,7 +26,7 @@ namespace HomePage
         private void Confirmation_Load(object sender, EventArgs e)
         {
             var context = new MyDBContext();
-            var customerInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == 389);
+            var customerInfo = context.Set<CustomerInfo>().FirstOrDefault(m => m.CustomerID == CustID.custID);
 
             firstName.Text = customerInfo.FirstName;
             lastName.Text = customerInfo.LastName;
@@ -51,7 +52,7 @@ namespace HomePage
 
         private void label18_Click(object sender, EventArgs e)
         {
-            label18.Text = Program.CustID.custID.ToString();
+            label18.Text = CustID.custID.ToString();
         }
         private void btn_confirmation_Click(object sender, EventArgs e)
         {

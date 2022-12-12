@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using HomePage.Models;
 using System.Xml.Linq;
+using static HomePage.Program;
 
 namespace HomePage
 {
@@ -49,7 +50,7 @@ namespace HomePage
             Random rnd = new Random();
 
             newCus.CustomerID = rnd.Next(999);
-            Program.CustID.custID = newCus.CustomerID;
+            CustID.custID = newCus.CustomerID;
             newCus.FirstName = fName.Text;
             newCus.LastName = LastName.Text;
             newCus.Email = Email.Text;
