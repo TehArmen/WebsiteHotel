@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using global::HomePage.Models;
+    using HomePage.Models;
     using Microsoft.EntityFrameworkCore;
 
     public class MyDBContext: DbContext
@@ -35,11 +35,6 @@
             var Rooms = modelBuilder.Entity<HotelRooms>();
 
             Rooms.HasKey(m => m.roomID);
-
-            var Reservations = modelBuilder.Entity<HotelReservations>();
-
-            Reservations.HasKey(m => m.reservationID);
-
 
             base.OnModelCreating(modelBuilder);
         }

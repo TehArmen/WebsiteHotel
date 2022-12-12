@@ -11,7 +11,7 @@ namespace HomePage
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new HomePage());
+            Application.Run(new Form1());
 
         }
 
@@ -19,9 +19,12 @@ namespace HomePage
         {
             public static int custID;
             public static int HotelroomID;
-            public static int HotelReservationID;
+            
 
         }
-       
+        public static class CustID
+        {
+            public static int custID;
+        }
     }
 }

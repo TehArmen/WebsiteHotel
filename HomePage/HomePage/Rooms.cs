@@ -33,8 +33,6 @@ namespace HomePage
         {
             Random rnd = new Random();
             CustID.HotelroomID = rnd.Next(999);
-            CustID.custID = rnd.Next(999);
-            CustID.HotelReservationID = rnd.Next(999);
         }
 
         private void label1_Click(object sender, EventArgs e)

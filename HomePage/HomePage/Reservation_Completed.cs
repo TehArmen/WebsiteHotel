@@ -9,11 +9,14 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using HomePage.Models;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using static HomePage.Program;
 using System.Net.Mail;
 using Microsoft.EntityFrameworkCore.Scaffolding;
+=======
+>>>>>>> parent of fb4442a (Admin and Reservation edits)
 
 namespace HomePage
 {
@@ -23,6 +26,7 @@ namespace HomePage
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void Reservation_Completed_Load(object sender, EventArgs e)
         {
@@ -66,5 +70,7 @@ namespace HomePage
         {
    
         }
+=======
+>>>>>>> parent of fb4442a (Admin and Reservation edits)
     }
 }

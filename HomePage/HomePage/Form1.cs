@@ -4,11 +4,11 @@ using HomePage.Models;
 namespace HomePage
 {
   
-    public partial class HomePage : Form
+    public partial class Form1 : Form
     {
 
        
-        public HomePage()
+        public Form1()
         {
             InitializeComponent();
           
@@ -32,7 +32,12 @@ namespace HomePage
 
         }
 
-       
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            this.Hide();
+            Rooms roomPage = new Rooms();
+            roomPage.Show();
+        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -46,6 +51,22 @@ namespace HomePage
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            //var context = new MyDBContext();
+            //var employeeInfo = context.Set<EmployeeINFO>().First(m => m.EmployeeID == 1001);
+            //employeeInfo.FirstName = "Jeremy";
+            //context.SaveChanges();  
+
+            //var abe = new EmployeeINFO();
+            //abe.EmployeeID = 69;
+            //abe.FirstName = "Zero";
+            //abe.LastName = "Requiem";
+            //context.Set<EmployeeINFO>().Add(abe);
+            //context.SaveChanges();
+
+            //context.Set<EmployeeINFO>().Remove(employeeInfo);
+            //context.SaveChanges();
+            
             Rooms roomPage = new Rooms();
             this.Hide();
             roomPage.Show();
