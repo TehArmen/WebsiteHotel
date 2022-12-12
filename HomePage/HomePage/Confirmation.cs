@@ -54,11 +54,12 @@ namespace HomePage
 
         }
 
-        private void btn_confirmation_Click(object sender, EventArgs e)
+        private void label18_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Reservation_Completed Conf = new Reservation_Completed();
-            Conf.Show();
+            label18.Text = CustID.custID.ToString();
+        }
+        private void btn_confirmation_Click(object sender, EventArgs e)
+        { 
 
             using (MailMessage mail = new MailMessage ())
             {
@@ -69,10 +70,15 @@ namespace HomePage
                 mail.IsBodyHtml= true;
 
                 using System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new System.Net.NetworkCredential("hotelwebsite07@gmail.com", "ierznlptvudwigir");
+                smtp.Credentials = new System.Net.NetworkCredential("hotelwebsite07@gmail.com", "tjexthsrlruaetgl");
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }
+
+            this.Hide();
+            Reservation_Completed Conf = new Reservation_Completed();
+            Conf.Show();
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -86,5 +92,9 @@ namespace HomePage
 
         }
 
+        private void firstName_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }

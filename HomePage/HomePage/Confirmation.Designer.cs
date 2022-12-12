@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_goback = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn_confirmation = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -62,16 +61,8 @@
             this.nameOnCard = new System.Windows.Forms.Label();
             this.cvv = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btn_goback
-            // 
-            this.btn_goback.Location = new System.Drawing.Point(70, 386);
-            this.btn_goback.Name = "btn_goback";
-            this.btn_goback.Size = new System.Drawing.Size(75, 23);
-            this.btn_goback.TabIndex = 67;
-            this.btn_goback.Text = "Go Back";
-            this.btn_goback.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -274,6 +265,7 @@
             this.firstName.Size = new System.Drawing.Size(44, 15);
             this.firstName.TabIndex = 68;
             this.firstName.Text = "label18";
+            this.firstName.Click += new System.EventHandler(this.firstName_Click);
             // 
             // email
             // 
@@ -394,11 +386,22 @@
             this.date.TabIndex = 81;
             this.date.Text = "label18";
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(635, 291);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(44, 15);
+            this.label18.TabIndex = 82;
+            this.label18.Text = "label18";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
             // Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.date);
             this.Controls.Add(this.cvv);
             this.Controls.Add(this.nameOnCard);
@@ -413,7 +416,6 @@
             this.Controls.Add(this.country);
             this.Controls.Add(this.email);
             this.Controls.Add(this.firstName);
-            this.Controls.Add(this.btn_goback);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btn_confirmation);
             this.Controls.Add(this.label16);
@@ -442,8 +444,6 @@
         }
 
         #endregion
-
-        private Button btn_goback;
         private CheckBox checkBox1;
         private Button btn_confirmation;
         private Label label16;
@@ -477,5 +477,6 @@
         private Label nameOnCard;
         private Label cvv;
         private Label date;
+        private Label label18;
     }
 }

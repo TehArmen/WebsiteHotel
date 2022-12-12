@@ -59,7 +59,6 @@
             this.cVV = new System.Windows.Forms.TextBox();
             this.Exp = new System.Windows.Forms.DateTimePicker();
             this.btn_cr = new System.Windows.Forms.Button();
-            this.btn_goback = new System.Windows.Forms.Button();
             this.zipCode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -367,16 +366,6 @@
             this.btn_cr.UseVisualStyleBackColor = false;
             this.btn_cr.Click += new System.EventHandler(this.btn_cr_Click);
             // 
-            // btn_goback
-            // 
-            this.btn_goback.Location = new System.Drawing.Point(50, 375);
-            this.btn_goback.Name = "btn_goback";
-            this.btn_goback.Size = new System.Drawing.Size(75, 23);
-            this.btn_goback.TabIndex = 33;
-            this.btn_goback.Text = "Go Back";
-            this.btn_goback.UseVisualStyleBackColor = true;
-            this.btn_goback.Click += new System.EventHandler(this.btn_goback_Click);
-            // 
             // zipCode
             // 
             this.zipCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -391,7 +380,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_goback);
             this.Controls.Add(this.btn_cr);
             this.Controls.Add(this.Exp);
             this.Controls.Add(this.cVV);

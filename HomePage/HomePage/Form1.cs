@@ -84,5 +84,10 @@ namespace HomePage
             LoginPage loginPage= new LoginPage();
             loginPage.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
