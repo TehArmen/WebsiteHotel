@@ -19,13 +19,11 @@ namespace HomePage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var myContext = new MyDBContext();
-
-            var credentials = myContext.Set<LoginPortal>().FirstOrDefault();
-            if (credentials.username == textBox1.Text && credentials.pass == textBox2.Text)
-            {
+           
             var context = new MyDBContext();
-           // var credentials = context.Set<LoginPortal>().FirstOrDefault(m => m.userID == 155);
+
+          
+            var credentials = context.Set<LoginPortal>().FirstOrDefault(m => m.userID == 1001);
             if (credentials.username == textBox1.Text && credentials.pass == textBox2.Text) 
             { 
                 this.Hide();
@@ -33,6 +31,7 @@ namespace HomePage
                 admin.Show();
             }
             else { label1.Show(); }
+
         }
 
         private void LoginPage_Load(object sender, EventArgs e)

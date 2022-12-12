@@ -51,12 +51,6 @@ namespace HomePage
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //serverConnect.Open();
-            //string firstName = "Zed";
-            //string query = "UPDATE EmployeeINFO SET FirstName = '"+firstName+"' WHERE EmployeeID = 1001";
-            //cmd = new SqlCommand(query,serverConnect);
-            //cmd.ExecuteNonQuery();
-            //serverConnect.Close();
 
             //var context = new MyDBContext();
             //var employeeInfo = context.Set<EmployeeINFO>().First(m => m.EmployeeID == 1001);
@@ -73,9 +67,9 @@ namespace HomePage
             //context.Set<EmployeeINFO>().Remove(employeeInfo);
             //context.SaveChanges();
             
-            checkout_page x = new checkout_page();
+            Rooms roomPage = new Rooms();
             this.Hide();
-            x.Show();
+            roomPage.Show();
 
         }
 

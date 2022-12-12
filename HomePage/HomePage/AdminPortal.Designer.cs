@@ -30,20 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cardNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameOnCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cvvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expMonthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.secondAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zipCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.customerBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.customerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -60,54 +48,21 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.customerIDDataGridViewTextBoxColumn,
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
             this.cardNumberDataGridViewTextBoxColumn,
-            this.nameOnCardDataGridViewTextBoxColumn,
-            this.cvvDataGridViewTextBoxColumn,
-            this.expMonthDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.firstAddressDataGridViewTextBoxColumn,
-            this.secondAddressDataGridViewTextBoxColumn,
-            this.cityDataGridViewTextBoxColumn,
-            this.countryDataGridViewTextBoxColumn,
-            this.zipCodeDataGridViewTextBoxColumn,
-            this.phoneNumberDataGridViewTextBoxColumn});
+            this.zipCodeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.customerBindingSource3;
-            this.dataGridView1.Location = new System.Drawing.Point(712, 117);
+            this.dataGridView1.Location = new System.Drawing.Point(287, 39);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 102;
             this.dataGridView1.RowTemplate.Height = 49;
-            this.dataGridView1.Size = new System.Drawing.Size(1012, 736);
+            this.dataGridView1.Size = new System.Drawing.Size(417, 269);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // customerIDDataGridViewTextBoxColumn
-            // 
-            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "customerID";
-            this.customerIDDataGridViewTextBoxColumn.HeaderText = "customerID";
-            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
-            this.customerIDDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.Width = 250;
             // 
             // cardNumberDataGridViewTextBoxColumn
             // 
@@ -115,71 +70,7 @@
             this.cardNumberDataGridViewTextBoxColumn.HeaderText = "cardNumber";
             this.cardNumberDataGridViewTextBoxColumn.MinimumWidth = 12;
             this.cardNumberDataGridViewTextBoxColumn.Name = "cardNumberDataGridViewTextBoxColumn";
-            this.cardNumberDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // nameOnCardDataGridViewTextBoxColumn
-            // 
-            this.nameOnCardDataGridViewTextBoxColumn.DataPropertyName = "nameOnCard";
-            this.nameOnCardDataGridViewTextBoxColumn.HeaderText = "nameOnCard";
-            this.nameOnCardDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.nameOnCardDataGridViewTextBoxColumn.Name = "nameOnCardDataGridViewTextBoxColumn";
-            this.nameOnCardDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // cvvDataGridViewTextBoxColumn
-            // 
-            this.cvvDataGridViewTextBoxColumn.DataPropertyName = "cvv";
-            this.cvvDataGridViewTextBoxColumn.HeaderText = "cvv";
-            this.cvvDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.cvvDataGridViewTextBoxColumn.Name = "cvvDataGridViewTextBoxColumn";
-            this.cvvDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // expMonthDataGridViewTextBoxColumn
-            // 
-            this.expMonthDataGridViewTextBoxColumn.DataPropertyName = "expMonth";
-            this.expMonthDataGridViewTextBoxColumn.HeaderText = "expMonth";
-            this.expMonthDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.expMonthDataGridViewTextBoxColumn.Name = "expMonthDataGridViewTextBoxColumn";
-            this.expMonthDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // firstAddressDataGridViewTextBoxColumn
-            // 
-            this.firstAddressDataGridViewTextBoxColumn.DataPropertyName = "firstAddress";
-            this.firstAddressDataGridViewTextBoxColumn.HeaderText = "firstAddress";
-            this.firstAddressDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.firstAddressDataGridViewTextBoxColumn.Name = "firstAddressDataGridViewTextBoxColumn";
-            this.firstAddressDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // secondAddressDataGridViewTextBoxColumn
-            // 
-            this.secondAddressDataGridViewTextBoxColumn.DataPropertyName = "secondAddress";
-            this.secondAddressDataGridViewTextBoxColumn.HeaderText = "secondAddress";
-            this.secondAddressDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.secondAddressDataGridViewTextBoxColumn.Name = "secondAddressDataGridViewTextBoxColumn";
-            this.secondAddressDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "city";
-            this.cityDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            this.cityDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // countryDataGridViewTextBoxColumn
-            // 
-            this.countryDataGridViewTextBoxColumn.DataPropertyName = "country";
-            this.countryDataGridViewTextBoxColumn.HeaderText = "country";
-            this.countryDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.countryDataGridViewTextBoxColumn.Name = "countryDataGridViewTextBoxColumn";
-            this.countryDataGridViewTextBoxColumn.Width = 250;
+            this.cardNumberDataGridViewTextBoxColumn.Width = 99;
             // 
             // zipCodeDataGridViewTextBoxColumn
             // 
@@ -187,15 +78,7 @@
             this.zipCodeDataGridViewTextBoxColumn.HeaderText = "zipCode";
             this.zipCodeDataGridViewTextBoxColumn.MinimumWidth = 12;
             this.zipCodeDataGridViewTextBoxColumn.Name = "zipCodeDataGridViewTextBoxColumn";
-            this.zipCodeDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // phoneNumberDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "phoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "phoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-            this.phoneNumberDataGridViewTextBoxColumn.Width = 250;
+            this.zipCodeDataGridViewTextBoxColumn.Width = 75;
             // 
             // customerBindingSource3
             // 
@@ -219,10 +102,11 @@
             // 
             // AdminPortal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1814, 1034);
+            this.ClientSize = new System.Drawing.Size(747, 378);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "AdminPortal";
             this.Text = "AdminPortal";
             this.Load += new System.EventHandler(this.AdminPortal_Load);
