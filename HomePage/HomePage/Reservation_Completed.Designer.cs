@@ -125,5 +125,8 @@
         private PictureBox pictureBox1;
         private Label label4;
         private Label label5;
+        private LinkLabel linkLabel1;
+        private Label email;
+        private Label codeConf;
     }
 }

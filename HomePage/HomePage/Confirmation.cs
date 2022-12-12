@@ -54,7 +54,7 @@ namespace HomePage
 
         }
 
-        private void btn_confirmation_Click(object sender, EventArgs e)
+        private void label18_Click(object sender, EventArgs e)
         {
             this.Hide();
             Reservation_Completed Conf = new Reservation_Completed();
@@ -80,6 +80,11 @@ namespace HomePage
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }
+
+            this.Hide();
+            Reservation_Completed Conf = new Reservation_Completed();
+            Conf.Show();
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -93,5 +98,9 @@ namespace HomePage
 
         }
 
+        private void firstName_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }

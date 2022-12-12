@@ -169,5 +169,10 @@ namespace HomePage
         {
             setButtonVisibility();
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
