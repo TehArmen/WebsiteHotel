@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cardNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zipCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.customerBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.customerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -41,6 +39,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource2)).BeginInit();
@@ -55,9 +55,6 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cardNumberDataGridViewTextBoxColumn,
-            this.zipCodeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.customerBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(287, 39);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(1);
@@ -66,43 +63,8 @@
             this.dataGridView1.RowTemplate.Height = 49;
             this.dataGridView1.Size = new System.Drawing.Size(417, 269);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // cardNumberDataGridViewTextBoxColumn
-            // 
-            this.cardNumberDataGridViewTextBoxColumn.DataPropertyName = "cardNumber";
-            this.cardNumberDataGridViewTextBoxColumn.HeaderText = "cardNumber";
-            this.cardNumberDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.cardNumberDataGridViewTextBoxColumn.Name = "cardNumberDataGridViewTextBoxColumn";
-            this.cardNumberDataGridViewTextBoxColumn.Width = 99;
-            // 
-            // zipCodeDataGridViewTextBoxColumn
-            // 
-            this.zipCodeDataGridViewTextBoxColumn.DataPropertyName = "zipCode";
-            this.zipCodeDataGridViewTextBoxColumn.HeaderText = "zipCode";
-            this.zipCodeDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.zipCodeDataGridViewTextBoxColumn.Name = "zipCodeDataGridViewTextBoxColumn";
-            this.zipCodeDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // customerBindingSource3
-            // 
-            //this.customerBindingSource3.DataSource = typeof(Form1.Models.CustomerInfo);
-            // 
-            // customerBindingSource2
-            // 
-            //this.customerBindingSource2.DataSource = typeof(Form1.Models.CustomerInfo);
-            // 
-            // customerBindingSource1
-            // 
-            //this.customerBindingSource1.DataSource = typeof(Form1.Models.CustomerInfo);
-            // 
-            // customerBindingSource
-            // 
-            //this.customerBindingSource.DataSource = typeof(Form1.Models.CustomerInfo);
-            // 
-            // myDBContextBindingSource
-            // 
-            //this.myDBContextBindingSource.DataSource = typeof(Form1.MyDBContext);
             // 
             // button1
             // 
@@ -144,12 +106,34 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(111, 252);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(123, 23);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Cancel Reservation";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(367, 336);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "label1";
+            this.label1.Visible = false;
+            // 
             // AdminPortal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(195)))));
             this.ClientSize = new System.Drawing.Size(747, 378);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -166,6 +150,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDBContextBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -195,5 +180,7 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button5;
+        private Label label1;
     }
 }

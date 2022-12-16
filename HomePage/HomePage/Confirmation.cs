@@ -15,6 +15,7 @@ using MailKit;
 using MimeKit;
 using System.Net.Mail;
 using static HomePage.Program;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 
 namespace HomePage
@@ -71,8 +72,16 @@ namespace HomePage
             {
                 mail.From = new MailAddress("hotelwebsite07@gmail.com");
                 mail.To.Add(email.Text);
-                mail.Subject = "Test Sending Mail";
-                mail.Body = "<h1> This is body </h1>";
+                mail.Subject = "Reservation Confirmation";
+                mail.Body = "<!DOCTYPE html>" +
+                                "<html> " +
+                                    "<body style=\"background - color:#FFFFFF;text-align:center;\"> " +
+                                    "<h3 style=\"color:#09324d;\">RESERVATION CONFIRMATION!</h3> " +
+                                    "<h4 style=\"color:#09324d;\"> <h4> " + "Hey " + firstName.Text + "," +
+                                    "<h4 style=\"color:#09324d;\">Thank you for your reservation at The Silicon Hotel! </h4> " +
+                                    "<h4 style=\"color:#09324d;\">Your Reservation ID is: <h4> " +
+                                    "</body> " +
+                                "</html>";
                 mail.IsBodyHtml= true;
 
                 using System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
